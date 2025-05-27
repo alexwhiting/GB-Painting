@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gb Painting-Services</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- External CSS -->
+    <link href="styles.css" rel="stylesheet">
+    
+  </head>
+  <body>
+     <div id=page-container>
+    
+      <!-- Everything exceept for footer goes under here -->
+      <div id="content-wrap">
+ 
+        <!-- Header1 -->
+        <header id="header1" class="d-none d-xl-block">
+          <div class="row hstack">
+            <div class="col-12 col-md-4">
+              <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
+            </div>
+            <div class="col-12 col-md-4">
+              <!-- Navigation -->
+              <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about-bookmark">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>                
+              </nav>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY-kcc0Icb9Lc6paao0j9h8XxOJKcE_ZxIsf1sSFf9qMlZAQ/viewform?ts=6834ef1c" target="_blank" class="button" id="button1">
+                <span>Free Estimate!</span>
+              </a>
+            </div>
+          </div>
+        </header>
+        
+        
+        <!-- Header1 on smaller screens -->
+        <header id="header2" class="d-block d-xl-none">
+          <a href="index.html"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="index.html#about-bookmark">About</a>
+              <a href="services.html">Services</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a> 
+            </div>
+          </div>
+        </header>
+
+        
+        <!-- Main -->
+        <main>
+        
+          <section class="services-header text-center py-5" style="height: 15rem;">
+            <div class="container">
+              <h1 class="display-4 mb-3" style="color: #2d5d1d; letter-spacing: 1px;">OUR SERVICES</h1>
+              <p class="lead text-muted">Explore Our Professional Painting Services</p>
+              <div style="width: 80px; height: 3px; background: #2d5d1d; margin: 1.5rem auto;"></div>
+            </div>
+          </section>
+          
+          <section id="interior-painting" class="services-sections mx-auto py-5 d-none d-xl-block">
+            <div class="container-80">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img src="images/interior.jpg" alt="Interior Painting" class="img-fluid w-100 services-pictures">
+                </div>
+                <div class="col-12 col-md-6">
+                  <h1 class="mb-3 text-center">Interior Painting</h1>
+                  <p>Applying paint to walls, ceilings, and trim within a building to improve & protect surfaces.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="exterior-painting" class="services-sections mx-auto py-5 d-none d-xl-block">
+            <div class="container-80">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h1 class="mb-3 text-center">Exterior Painting</h1>
+                  <p>Applying paint to siding and trim to the outer surfaces of a building to protect it from weather damage.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <img src="images/exterior.jpg" alt="Exterior Painting" class="img-fluid w-100 services-pictures">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="deck-staining" class="services-sections mx-auto py-5 d-none d-xl-block">
+            <div class="container-80">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img src="images/deck.jpg" alt="Deck Staining" class="img-fluid w-100 services-pictures">
+                </div>
+                <div class="col-12 col-md-6">
+                  <h1 class="mb-3 text-center">Deck Staining / Painting</h1>
+                  <p>Applying paint or stain to all deck surfaces to enhance its appearance and prevent rot.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Page on smaller screens -->
+          <section class="d-block d-xl-none" style="margin-bottom: 3.75rem;">
+            <div class="container-80">
+              <img src="images/interior.jpg" alt="Interior Painting" class="img-fluid w-100 services-pictures mb-4">
+              <div>
+                <h1 style="text-align: center;">Interior Painting</h1>
+                <p>Applying paint to walls, ceilings, and trim within a building to improve & protect surfaces.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="d-block d-xl-none" style="margin-bottom: 3.75rem;">
+            <div class="container-80">
+              <img src="images/exterior.jpg" alt="Exterior Painting" class="img-fluid w-100 services-pictures mb-4">
+              <div>
+                <h1 style="text-align: center;">Exterior Painting</h1>
+                <p>Applying paint to siding and trim to the outer surfaces of a building to protect it from weather damage.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="d-block d-xl-none" style="margin-bottom: 3.75rem;">
+            <div class="container-80">
+              <img src="images/deck.jpg" alt="Deck Staining" class="img-fluid w-100 services-pictures mb-4">
+              <div>
+                <h1 style="text-align: center;">Deck Staining / Painting</h1>
+                <p>Applying paint or stain to all deck surfaces to enhance its appearance and prevent rot.</p>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+            
+            
+      <!-- Footer -->
+      <footer id="footer" class="d-none d-md-block mt-4">
+          <div class="row align-items-center mx-0">
+            <div class="col-md-4 text-start ps-4">
+              <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
+            </div>
+            <div class="col-md-4 text-center call-us-2">
+            CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
+            </div>
+            <div class="col-md-4 text-end pe-4">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY-kcc0Icb9Lc6paao0j9h8XxOJKcE_ZxIsf1sSFf9qMlZAQ/viewform?ts=6834ef1c" target="_blank" class="button" id="button2">
+                <span>Free Estimate!</span>
+              </a>
+            </div>
+         </div>
+      </footer>
+      
+      <!-- Footer1 on small screens -->
+      <footer id="footer3" class="d-block d-md-none mt-4">
+        <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100" style="float: left;"></a>      
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY-kcc0Icb9Lc6paao0j9h8XxOJKcE_ZxIsf1sSFf9qMlZAQ/viewform?ts=6834ef1c" target="_blank" class="button" id="button4">
+          <span>Free Estimate!</span>
+        </a>
+      </footer>
+      
+      <footer id="footer2" class="d-flex justify-content-center align-items-center p-1 w-100">
+        <p>&copy; 2025 Groves & Bodnar Painting. All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
