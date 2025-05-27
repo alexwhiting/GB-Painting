@@ -39,9 +39,19 @@ html {
   cursor: pointer;
 }
 
+#button1, #button4{
+  margin-right: 2.5rem;
+  padding: 1.875rem;
+  border-radius: 50px;
+  float: right;
+  background-color: #2d5d1d;
+  color: white;
+  border: 2px solid #2d5d1d;
+}
+
 #button2 {
-  padding: 1.25rem;
-  border-radius: 1.875rem;
+  padding: 1.875rem;
+  border-radius: 50px;
   background-color: #2d5d1d;
   color: white;
   border: 2px solid #2d5d1d;
@@ -153,14 +163,13 @@ html {
 #footer2 {
   background-color: #2d5d1d;
   color: white;
-  margin-top: 1.875rem;
+  margin-top: 2rem;
   width: 100vw;
 }
 
 #footer3 {
   text-align: center;
   margin: 3.125rem 0 0 0;
-  padding-bottom: 4.688rem;
 }
 
 .call-us-2 a{
@@ -628,25 +637,25 @@ html {
 }
 
 @media (max-width: 500px) {
-  #button1, #button4 {
-    margin-right: 0.5rem;
-    padding: 1.25rem;
-    border-radius: 30px;
-    float: right;
-    background-color: #2d5d1d;
-    color: white;
-    border: 2px solid #2d5d1d;
+  #button4 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .sm-footer-logo {
+    margin: auto;
   }
 }
 
 @media (min-width: 500px) {
-  #button1, #button4{
-  margin-right: 2.5rem;
-  padding: 1.875rem;
-  border-radius: 50px;
-  float: right;
-  background-color: #2d5d1d;
-  color: white;
-  border: 2px solid #2d5d1d;
+  .sm-footer-logo {
+    float: left;
+  }
 }
+
+@media (max-width: 450px) {
+  #footer2 p {
+    font-size: 1rem;
+  }
 }
