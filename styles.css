@@ -410,14 +410,16 @@ html {
 
 .areas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 0.75rem;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
 }
 
 
 .area-item {
   background: rgba(45, 93, 29, 0.08);
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem 0.75rem;
   text-align: center;
   border-radius: 6px;
   font-weight: 500;
@@ -432,20 +434,6 @@ html {
   background: rgba(45, 93, 29, 0.15);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(45, 93, 29, 0.1);
-}
-
-
-@media (max-width: 62rem) {
-  .areas-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media (max-width: 36rem) {
-  .area-item {
-    padding: 0.625rem 0.375rem;
-    font-size: 0.9rem;
-  }
 }
 
 .areas-grid a{
