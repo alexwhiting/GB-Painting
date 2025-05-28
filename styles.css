@@ -668,6 +668,7 @@ html {
 
 [class*="job1-"] {
   position: relative; 
+}
 
 [class*="job1-"] h2 {
   position: absolute;
