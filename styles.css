@@ -653,3 +653,28 @@ html {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 500px) {
+  [class*="job1-"] {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 500px) {
+  [class*="job1-"] {
+    height: 40vh;
+  }
+}
+
+[class*="job1-"] {
+  position: relative; 
+
+[class*="job1-"] h2 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
