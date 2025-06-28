@@ -37,6 +37,9 @@ html {
 
 .nav a:hover {
   color: #2d5d1d;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-underline-offset: 2px;
 }
 
 .button {
