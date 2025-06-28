@@ -2,6 +2,11 @@ html {
   font-size: 16px;
 }
 
+:root {
+  --primary-color: #2d5d1d;
+  --secondary-color: #f8f9fa;
+}
+
 @font-face {
   font-family: myFont;
   src: url('Rajdhani-Regular.ttf')
