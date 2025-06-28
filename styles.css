@@ -729,3 +729,21 @@ html {
 .quote-icon {
   color: var(--primary-color);
 }
+
+.btn-about {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 50px;
+  background-color: #2d5d1d;
+  color: white;
+  border: 2px solid #2d5d1d;
+}
+
+@media (max-width: 991px) {
+  .btn-about {
+    margin: auto;
+    display: block;
+  }
+}
