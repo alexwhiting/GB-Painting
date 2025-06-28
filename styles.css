@@ -687,3 +687,8 @@ html {
   width: 100%;
   text-align: center;
 }
+
+.about-subheader {
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
