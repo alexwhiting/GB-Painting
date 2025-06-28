@@ -725,3 +725,7 @@ html {
 .expertise-list li {
   color: var(--primary-color);
 }
+
+.quote-icon {
+  color: var(--primary-color);
+}
