@@ -456,7 +456,6 @@ html {
 
 .services-header{
   text-align: center;
-  background-color: #f8f9fa;
   margin: 2.5rem 0 2.5rem 0;
   padding: 1.25rem 0 3.75rem 0;
 }
@@ -746,4 +745,8 @@ html {
     margin: auto;
     display: block;
   }
+}
+
+.services-cards {
+  margin: 0 2rem;
 }
