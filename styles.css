@@ -160,10 +160,11 @@ html {
   background-color: var(--primary-color);
   border-radius: 3rem;
   text-align: center;
-  width: 20%;
+  width: 165px;
   padding: 1.2rem;
   margin: 1.2rem auto;
 }
+
 
 .subheaders {
   color: #2d5d1d;
