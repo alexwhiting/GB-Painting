@@ -1,383 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GB Painting</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- External CSS -->
-    <link href="styles.css" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GB Painting</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- External CSS -->
+  <link href="styles.css" rel="stylesheet">
 
-    <meta name="description" content="We offer interior and exterior painting services in the Annapolis Valley, Halifax, and surrounding areas.">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    
-    <div id=page-container>
-    
-      <!-- Everything exceept for footer goes under here -->
-      <div id="content-wrap">
- 
-        <!-- Header1 -->
-        <header id="header1" class="d-none d-xl-block">
-          <div class="row hstack">
-            <div class="col-12 col-md-4">
-              <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
-            </div>
-            <div class="col-12 col-md-4">
-              <!-- Navigation -->
-              <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="index.html#about-bookmark">About</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>          
-              </nav>
-            </div>
-            <div class="col-12 col-md-4">
-              <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button1">
-                <span>Free Estimate!</span>
-              </a>
-            </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <meta name="description"
+    content="We offer interior and exterior painting services in the Annapolis Valley, Halifax, and surrounding areas.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div id=page-container>
+
+    <!-- Everything exceept for footer goes under here -->
+    <div id="content-wrap">
+
+      <!-- Header1 -->
+      <header id="header1" class="d-none d-xl-block">
+        <div class="row hstack">
+          <div class="col-12 col-md-4">
+            <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
           </div>
-        </header>
-        
-        <!-- Header1 on smaller screens -->
-        <header id="header2" class="d-block d-xl-none">
-          <a href="index.html"><img src="images/logo.jpg" alt="logo" style="width: 100%; height: auto; max-width: 275px;"></a>
-          <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
+          <div class="col-12 col-md-4">
+            <!-- Navigation -->
+            <nav class="nav">
               <a href="index.html">Home</a>
               <a href="index.html#about-bookmark">About</a>
               <a href="services.html">Services</a>
               <a href="portfolio.html">Portfolio</a>
               <a href="contact.html">Contact</a>
-              <a data-bs-toggle="modal" data-bs-target="#contactModal">Free Estimate!</a>      
-            </div>
+            </nav>
           </div>
-        </header>
-        
-        <!-- Main -->
-        <main>
-        
-          <div class="container">
-            <section class="hero-section" style="margin-top: 2rem; margin-bottom: 5rem;">
-              <div class="hero-overlay"></div>
-              <div class="hero-content">
-                <h1>RENOVATIONS TO REALITY </h1>
-                <p>Professional Interior and Exterior Painting </p>
-              </div>
-            </section>
-            
-            <div id="about-bookmark" class="anchor-target"></div>
-            <div class="row mt-5 scroll-animate">
-              <div class="col-12 col-lg-6">
-                <div class="about">
-                  <h1 class="subheaders about-subheader">About Us</h1>
-                  <p>Welcome to Groves & Bodnar Painting, your trusted local painting company run by two hardworking university students! We're passionate about 
-                  delivering high quality, affordable painting services.</p>
-                  <p>Founded by Grant Groves and Isaac Bodnar, we started this business to bring reliable and professional painting services to our community.
-                  No matter what the job may be, we take pride in our work and commitment to customer satisfaction.</p> 
-                  <p>As university students, we understand the importance of fair pricing, so we keep our rates reasonable without sacrificing quality.</p>
-                  <button class="button btn-about text-center" onclick="window.location.href='services.html'" style="margin-top: 2rem;"><span>Our Services</span></button>
-                </div>
-              </div>
-              
-              <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-none d-lg-block">
-                <img class="picture2" src="images/picture2.jpg" alt="Painter on the job" width="400" height="540">
-              </div>
+          <div class="col-12 col-md-4">
+            <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button1">
+              <span>Free Estimate!</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Header1 on smaller screens -->
+      <header id="header2" class="d-block d-xl-none">
+        <a href="index.html"><img src="images/logo.jpg" alt="logo"
+            style="width: 100%; height: auto; max-width: 275px;"></a>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="index.html#about-bookmark">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a data-bs-toggle="modal" data-bs-target="#contactModal">Free Estimate!</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main>
+
+        <div class="container">
+          <section class="hero-section" style="margin-top: 2rem; margin-bottom: 5rem;">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1>RENOVATIONS TO REALITY </h1>
+              <p>Professional Interior and Exterior Painting </p>
             </div>
-            
-            <div class="row expertise-section">
-              <div class="col-12 text-center">
-                <h1 class="section-title" style="color: var(--primary-color); font-weight: bold; margin-top: 8rem;">Areas of Operation</h1>
-                 <h4 style="color: var(--primary-color); text-align: center; margin: 1rem 0;">Please contact us for any questions regarding location</h4>
-                <div class="divider mx-auto"></div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="expertise-card">
-                  <div class="expertise-icon">
-                    <i class="fa-solid fa-apple-whole"></i>
-                  </div>
-                  <h3>Annapolis Valley</h3>
-                  <ul class="expertise-list">
-                    <li>Wolfville</li>
-                    <li>New Minas</li>
-                    <li>Kentville</li>
-                    <li>And more!</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="expertise-card">
-                  <div class="expertise-icon">
-                    <i class="fa-solid fa-city"></i>
-                  </div>
-                  <h3>Halifax and Surrounding Areas</h3>
-                  <ul class="expertise-list">
-                    <li>Bedford</li>
-                    <li>Sackville</li>
-                    <li>Tantallon</li>
-                    <li>And more!</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="col-md-4 mb-4">
-                <div class="expertise-card">
-                  <div class="expertise-icon">
-                    <i class="fa-solid fa-tree-city"></i>
-                  </div>
-                  <h3>Dartmouth</h3>
-                  <ul class="expertise-list">
-                    <li>Cole Harbour</li>
-                    <li>Eastern Passage</li>
-                    <li>Portland</li>
-                    <li>And more!</li>
-                  </ul>
-                </div>
+          </section>
+
+          <div id="about-bookmark" class="anchor-target"></div>
+          <div class="row mt-5 scroll-animate">
+            <div class="col-12 col-lg-6">
+              <div class="about">
+                <h1 class="subheaders about-subheader">About Us</h1>
+                <p>Welcome to Groves & Bodnar Painting, your trusted local painting company run by two hardworking
+                  university students! We're passionate about
+                  delivering high quality, affordable painting services.</p>
+                <p>Founded by Grant Groves and Isaac Bodnar, we started this business to bring reliable and professional
+                  painting services to our community.
+                  No matter what the job may be, we take pride in our work and commitment to customer satisfaction.</p>
+                <p>As university students, we understand the importance of fair pricing, so we keep our rates reasonable
+                  without sacrificing quality.</p>
+                <button class="button btn-about text-center" onclick="window.location.href='services.html'"
+                  style="margin-top: 2rem;"><span>Our Services</span></button>
               </div>
             </div>
 
-            <section class="testimonials py-5" style="margin-top: 50px;">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-none d-lg-block">
+              <img class="picture2" src="images/picture2.jpg" alt="Painter on the job" width="400" height="540">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="section-title" style="color: var(--primary-color); font-weight: bold; margin-top: 8rem;">Areas
+                of Operation</h1>
+              <h4 style="color: var(--primary-color); text-align: center; margin: 1rem 0;">Please contact us for any
+                questions regarding location</h4>
+              <div class="divider mx-auto"></div>
+            </div>
+
+            <div class="row js-areas-of-operation">
+            </div>
+          </div>
+
+          <section class="testimonials py-5" style="margin-top: 50px;">
             <div class="container">
-              <h1 class="text-center mb-5" style="color: #2d5d1d; font-weight: bold; margin-top: 4rem;">Client Testimonials</h1>
+              <h1 class="text-center mb-5" style="color: #2d5d1d; font-weight: bold; margin-top: 4rem;">Client
+                Testimonials</h1>
               <div class="divider mx-auto"></div>
               <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
                   <div class="expertise-card">
-                      <i class="fas fa-quote-left quote-icon"></i>
-                      <p class="card-text fs-5 text-center" style="font-style: italic;">My experience having the exterior of our house painted by Groves and Bodnar Painting was extremely positive. The guys 
-                        were respectful, friendly, trustworthy, and hardworking. Their communication was excellent, and they always showed up when they said they would. 
-                        I am very happy with the end result, and I would have no hesitations recommending them to any of my friends and family.</p>
-                      <i class="fas fa-quote-right quote-icon"></i>
-                      <div class="mt-4">
-                        <h5 class="mb-1">Leanne M</h5>
-                        <p class="text-muted">Halifax, NS</p>
-                      </div>
-                      <div class="mb-3">
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                      </div>
-                    </div>                 
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="card-text fs-5 text-center" style="font-style: italic;">My experience having the exterior
+                      of our house painted by Groves and Bodnar Painting was extremely positive. The guys
+                      were respectful, friendly, trustworthy, and hardworking. Their communication was excellent, and
+                      they always showed up when they said they would.
+                      I am very happy with the end result, and I would have no hesitations recommending them to any of
+                      my friends and family.</p>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="mt-4">
+                      <h5 class="mb-1">Leanne M</h5>
+                      <p class="text-muted">Halifax, NS</p>
+                    </div>
+                    <div class="mb-3">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
-          </div>
-        </main>
-      </div>
-      
-      <!-- Footer -->
-      <footer id="footer" class="d-none d-md-block mt-4">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-start">
-              <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
-            </div>
-            <div class="col-md-4 text-center call-us-2">
-            CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
-            </div>
-            <div class="col-md-4 text-end">
-              <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button2">
-                <span>Free Estimate!</span>
-              </a>
-            </div>
-         </div>
         </div>
-      </footer>
-      
-      <!-- Footer1 on small screens -->
-      <footer id="footer3" class="d-block d-md-none">
-        <a href="index.html"><img src="images/logo.jpg" alt="logo" class="sm-footer-logo" width="192" height="100"></a>      
-        <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button4">
-          <span>Free Estimate!</span>
-        </a>
-      </footer>
-      
-      <footer id="footer2" class="d-flex justify-content-center align-items-center p-1">
-        <p>&copy; 2025 Groves & Bodnar Painting. All Rights Reserved</p>
-      </footer>
+        </section>
+
     </div>
+    </main>
+  </div>
 
-    <!-- Modal Form -->
-     <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">Free Estimate Form</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="modalContactForm" action="https://formspree.io/f/xvgrnokr" method="POST">
-              
-              <input type="hidden" name="_replyto" value="grantgrovesvp@gmail.com">
-              <input type="hidden" name="_subject" value="New Painting Request">
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Full Name*</label>
-                <input type="text" class="form-control" name="name" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Email*</label>
-                <input type="email" class="form-control" name="email" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Phone</label>
-                <input type="tel" class="form-control" name="phone">
-              </div>
-
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Address/Postal Code*</label>
-                <input type="tel" class="form-control" name="Address/Postal Code" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Best time to reach you*</label>
-                <select class="form-select" name="Best time to contact" required>
-                  <option value="" disabled selected>Select time</option>
-                  <option value="Evenings - after 5:00PM">Evenings - after 5:00PM</option>
-                  <option value="Weekends">Weekends</option>
-                  <option value="Anytime">Anytime</option>
-                </select>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Brief description of desired work*</label>
-                <textarea class="form-control" name="Desired Work" rows="4" required></textarea>
-              </div>
-              
-              <input type="text" name="_gotcha" style="display:none">
-              
-              <div class="d-grid">
-                <button type="submit" class="btn submit-btn">
-                  <span class="submit-text">Send Request</span>
-                  <span class="spinner-border spinner-border-sm d-none" role="status"></span>
-                </button>
-              </div>
-            </form>
-          </div>
+  <!-- Footer -->
+  <footer id="footer" class="d-none d-md-block mt-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-start">
+          <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
+        </div>
+        <div class="col-md-4 text-center call-us-2">
+          CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
+        </div>
+        <div class="col-md-4 text-end">
+          <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button2">
+            <span>Free Estimate!</span>
+          </a>
         </div>
       </div>
     </div>
-  
-    <!-- Modal Form JS-->
-    <script>
-    document.getElementById('modalContactForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const submitText = submitBtn.querySelector('.submit-text');
-      const spinner = submitBtn.querySelector('.spinner-border');
-      
-      submitText.textContent = 'Sending...';
-      spinner.classList.remove('d-none');
-      submitBtn.disabled = true;
-      
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        
-        if (response.ok) {
-          // Success message
-          form.innerHTML = `
-            <div class="text-center py-4" style="color: white;">
-              <i class="fas fa-check-circle mb-3" style="font-size: 3rem; color: var(--primary-color);"></i>
-              <h3 style="color: var(--primary-color);">Thank You!</h3>
-              <p style="color: var(--primary-color);">Your request has been sent. We will get back to you shortly.</p>
-              <button class="success-close-btn mt-3" data-bs-dismiss="modal">
-                Close
+  </footer>
+
+  <!-- Footer1 on small screens -->
+  <footer id="footer3" class="d-block d-md-none">
+    <a href="index.html"><img src="images/logo.jpg" alt="logo" class="sm-footer-logo" width="192" height="100"></a>
+    <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button4">
+      <span>Free Estimate!</span>
+    </a>
+  </footer>
+
+  <footer id="footer2" class="d-flex justify-content-center align-items-center p-1">
+    <p>&copy; 2025 Groves & Bodnar Painting. All Rights Reserved</p>
+  </footer>
+  </div>
+
+  <!-- Modal Form -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Free Estimate Form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modalContactForm" action="https://formspree.io/f/xvgrnokr" method="POST">
+
+            <input type="hidden" name="_replyto" value="grantgrovesvp@gmail.com">
+            <input type="hidden" name="_subject" value="New Painting Request">
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Full Name*</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Email*</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Phone</label>
+              <input type="tel" class="form-control" name="phone">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Address/Postal Code*</label>
+              <input type="tel" class="form-control" name="Address/Postal Code" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Best time to reach you*</label>
+              <select class="form-select" name="Best time to contact" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="Evenings - after 5:00PM">Evenings - after 5:00PM</option>
+                <option value="Weekends">Weekends</option>
+                <option value="Anytime">Anytime</option>
+              </select>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Brief description of desired work*</label>
+              <textarea class="form-control" name="Desired Work" rows="4" required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="d-grid">
+              <button type="submit" class="btn submit-btn">
+                <span class="submit-text">Send Request</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
               </button>
             </div>
-          `;
-          
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'conversion', {'send_to': 'AW-YOUR_GOOGLE_ADS_ID'});
-          }
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (error) {
-        form.innerHTML = `
-          <div class="alert alert-danger">
-            <i class="fas fa-exclamation-triangle me-2"></i>
-            Message failed to send. Please email directly to:
-            <a href="mailto:grantgrovesvp@gmail.com">grantgrovesvp@gmail.com</a>
-          </div>
-          <button class="btn btn-secondary mt-3" onclick="location.reload()">Try Again</button>
-        `;
-      } finally {
-        submitText.textContent = 'Send Request';
-        spinner.classList.add('d-none');
-        submitBtn.disabled = false;
-      }
-    });
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    // Reset form when modal closes
-    document.getElementById('contactModal').addEventListener('hidden.bs.modal', function() {
-      const form = document.getElementById('modalContactForm');
-      if (form) form.reset();
-    });
-  </script>
+  <!-- Modal Form JS-->
+  <script src="scripts/index.js" type="module"></script>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const animateOnScroll = function() {
-          const elements = document.querySelectorAll('.scroll-animate');
-          const windowHeight = window.innerHeight;
-          
-          elements.forEach(element => {
-              const elementPosition = element.getBoundingClientRect().top;
-              
-              if (elementPosition < windowHeight * 0.85) {
-                  element.classList.add('active');
-              }
-          });
-      };
-      
-     
-      animateOnScroll();
-        window.addEventListener('scroll', animateOnScroll);
-    });
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        const headerHeight = document.querySelector('header').offsetHeight;
-        const targetPosition = targetElement.offsetTop - headerHeight - 20; 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  </script>
-  
-  </body>
-  
+</body>
+
 </html>

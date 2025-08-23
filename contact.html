@@ -1,305 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gb Painting-Contact</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gb Painting-Contact</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!-- External CSS -->
-    <link href="styles.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-     <div id=page-container>
-    
-      <!-- Everything exceept for footer goes under here -->
-      <div id="content-wrap">
- 
-        <!-- Header1 -->
-        <header id="header1" class="d-none d-xl-block">
-          <div class="row hstack">
-            <div class="col-12 col-md-4">
-              <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
-            </div>
-            <div class="col-12 col-md-4">
-              <!-- Navigation -->
-              <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="index.html#about-bookmark">About</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>                
-              </nav>
-            </div>
-            <div class="col-12 col-md-4">
-              <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button1">
-                <span>Free Estimate!</span>
-              </a>
-            </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- External CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id=page-container>
+
+    <!-- Everything exceept for footer goes under here -->
+    <div id="content-wrap">
+
+      <!-- Header1 -->
+      <header id="header1" class="d-none d-xl-block">
+        <div class="row hstack">
+          <div class="col-12 col-md-4">
+            <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
           </div>
-        </header>
-        
-        
-        <!-- Header1 on smaller screens -->
-        <header id="header2" class="d-block d-xl-none">
-          <a href="index.html"><img src="images/logo.jpg" alt="logo" style="width: 100%; height: auto; max-width: 275px;"></a>
-          <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
+          <div class="col-12 col-md-4">
+            <!-- Navigation -->
+            <nav class="nav">
               <a href="index.html">Home</a>
               <a href="index.html#about-bookmark">About</a>
               <a href="services.html">Services</a>
               <a href="portfolio.html">Portfolio</a>
-              <a href="contact.html">Contact</a> 
-              <a data-bs-toggle="modal" data-bs-target="#contactModal">Free Estimate!</a>
-            </div>
+              <a href="contact.html">Contact</a>
+            </nav>
           </div>
-        </header>
+          <div class="col-12 col-md-4">
+            <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button1">
+              <span>Free Estimate!</span>
+            </a>
+          </div>
+        </div>
+      </header>
 
-        
-        <!-- Main -->
-        <main>
-          
-          <section class="services-header text-center py-5" style="height: 15rem;">
-            <div class="container">
-              <h1 class="display-4 mb-3" style="color: #2d5d1d; letter-spacing: 1px; font-weight: bold;">CONTACT US</h1>
-              <p class="lead text-muted"></p>
-              <div style="width: 80px; height: 3px; background: #2d5d1d; margin: 1.5rem auto;"></div>
-            </div>
-          </section>
 
-          <section>
-            <div class="container">
-              <div class="row g-4">
-                
-                <div class="col-12 col-lg-6">
-                  <div class="img-container h-100">
-                    <img src="images/picture3.jpg" alt="Professional Painter At Work" class="img-fluid w-100 h-100 object-fit-cover">
-                  </div>
+      <!-- Header1 on smaller screens -->
+      <header id="header2" class="d-block d-xl-none">
+        <a href="index.html"><img src="images/logo.jpg" alt="logo"
+            style="width: 100%; height: auto; max-width: 275px;"></a>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="index.html#about-bookmark">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a data-bs-toggle="modal" data-bs-target="#contactModal">Free Estimate!</a>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Main -->
+      <main>
+
+        <section class="services-header text-center py-5" style="height: 15rem;">
+          <div class="container">
+            <h1 class="display-4 mb-3" style="color: #2d5d1d; letter-spacing: 1px; font-weight: bold;">CONTACT US</h1>
+            <p class="lead text-muted"></p>
+            <div style="width: 80px; height: 3px; background: #2d5d1d; margin: 1.5rem auto;"></div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row g-4">
+
+              <div class="col-12 col-lg-6">
+                <div class="img-container h-100">
+                  <img src="images/picture3.jpg" alt="Professional Painter At Work"
+                    class="img-fluid w-100 h-100 object-fit-cover">
                 </div>
-                
-                <div class="col-12 col-lg-6 d-flex align-items-center">
-                  <div class="text-center w-100">
-                    <h2 class="mb-4" style="color: #2d5d15;">Contact Information</h2>
-                    
-                    <ul class="contacts-list text-start ps-0 ps-md-5">
-                      <li><a href="mailto:grantgrovesvp@gmail.com"><i class="fas fa-envelope"></i> Email: grantgrovesvp@gmail.com</a></li>
-                      <li><a href="tel:902-999-5418"><i class="fas fa-phone-alt"></i> Phone: 902-999-5418</a></li>
-                      <li><i class="fas fa-map-marker-alt"></i> Serving Halifax and Nearby Areas</li>
-                      <li><i class="fas fa-clock"></i> Business Hours: Mon-Fri 8:00 AM - 5:00 PM</li>
-                    </ul>                  
-                  </div>
-                </div>                
+              </div>
+
+              <div class="col-12 col-lg-6 d-flex align-items-center">
+                <div class="text-center w-100">
+                  <h2 class="mb-4" style="color: #2d5d15;">Contact Information</h2>
+
+                  <ul class="contacts-list text-start ps-0 ps-md-5">
+                    <li><a href="mailto:grantgrovesvp@gmail.com"><i class="fas fa-envelope"></i> Email:
+                        grantgrovesvp@gmail.com</a></li>
+                    <li><a href="tel:902-999-5418"><i class="fas fa-phone-alt"></i> Phone: 902-999-5418</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Serving Halifax and Nearby Areas</li>
+                    <li><i class="fas fa-clock"></i> Business Hours: Mon-Fri 8:00 AM - 5:00 PM</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </section>
-          
-          
-        </main>
-      </div>
-            
-            
-      <!-- Footer -->
-      <footer id="footer" class="d-none d-md-block mt-4">
-          <div class="row align-items-center mx-0">
-            <div class="col-md-4 text-start ps-4">
-              <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
-            </div>
-            <div class="col-md-4 text-center call-us-2">
-            CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
-            </div>
-            <div class="col-md-4 text-end pe-4">
-              <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button2">
-                <span>Free Estimate!</span>
-              </a>
-            </div>
-         </div>
-      </footer>
-      
-      <!-- Footer1 on small screens -->
-      <footer id="footer3" class="d-block d-md-none mt-4">
-        <a href="index.html"><img src="images/logo.jpg" alt="logo" class="sm-footer-logo" width="192" height="100"></a>      
-        <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button4">
-          <span>Free Estimate!</span>
-        </a>
-      </footer>
-      
-      <footer id="footer2" class="d-flex justify-content-center align-items-center p-1 w-100">
-        <p>&copy; 2025 Groves & Bodnar Painting. All Rights Reserved</p>
-      </footer>
+          </div>
+        </section>
+
+
+      </main>
     </div>
 
-     <!-- Modal Form -->
-     <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">Free Estimate Form</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="modalContactForm" action="https://formspree.io/f/xvgrnokr" method="POST">
-              
-              <input type="hidden" name="_replyto" value="grantgrovesvp@gmail.com">
-              <input type="hidden" name="_subject" value="New Painting Request">
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Full Name*</label>
-                <input type="text" class="form-control" name="name" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Email*</label>
-                <input type="email" class="form-control" name="email" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Phone</label>
-                <input type="tel" class="form-control" name="phone">
-              </div>
 
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Address/Postal Code*</label>
-                <input type="tel" class="form-control" name="Address/Postal Code" required>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Best time to reach you*</label>
-                <select class="form-select" name="Best time to contact" required>
-                  <option value="" disabled selected>Select time</option>
-                  <option value="Evenings - after 5:00PM">Evenings - after 5:00PM</option>
-                  <option value="Weekends">Weekends</option>
-                  <option value="Anytime">Anytime</option>
-                </select>
-              </div>
-              
-              <div class="form-group mb-4">
-                <label class="form-label visible-label">Brief description of desired work*</label>
-                <textarea class="form-control" name="Desired Work" rows="4" required></textarea>
-              </div>
-              
-              <input type="text" name="_gotcha" style="display:none">
-              
-              <div class="d-grid">
-                <button type="submit" class="btn submit-btn">
-                  <span class="submit-text">Send Request</span>
-                  <span class="spinner-border spinner-border-sm d-none" role="status"></span>
-                </button>
-              </div>
-            </form>
-          </div>
+    <!-- Footer -->
+    <footer id="footer" class="d-none d-md-block mt-4">
+      <div class="row align-items-center mx-0">
+        <div class="col-md-4 text-start ps-4">
+          <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
+        </div>
+        <div class="col-md-4 text-center call-us-2">
+          CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
+        </div>
+        <div class="col-md-4 text-end pe-4">
+          <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button2">
+            <span>Free Estimate!</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer1 on small screens -->
+    <footer id="footer3" class="d-block d-md-none mt-4">
+      <a href="index.html"><img src="images/logo.jpg" alt="logo" class="sm-footer-logo" width="192" height="100"></a>
+      <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button4">
+        <span>Free Estimate!</span>
+      </a>
+    </footer>
+
+    <footer id="footer2" class="d-flex justify-content-center align-items-center p-1 w-100">
+      <p>&copy; 2025 Groves & Bodnar Painting. All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <!-- Modal Form -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Free Estimate Form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modalContactForm" action="https://formspree.io/f/xvgrnokr" method="POST">
+
+            <input type="hidden" name="_replyto" value="grantgrovesvp@gmail.com">
+            <input type="hidden" name="_subject" value="New Painting Request">
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Full Name*</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Email*</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Phone</label>
+              <input type="tel" class="form-control" name="phone">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Address/Postal Code*</label>
+              <input type="tel" class="form-control" name="Address/Postal Code" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Best time to reach you*</label>
+              <select class="form-select" name="Best time to contact" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="Evenings - after 5:00PM">Evenings - after 5:00PM</option>
+                <option value="Weekends">Weekends</option>
+                <option value="Anytime">Anytime</option>
+              </select>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label visible-label">Brief description of desired work*</label>
+              <textarea class="form-control" name="Desired Work" rows="4" required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="d-grid">
+              <button type="submit" class="btn submit-btn">
+                <span class="submit-text">Send Request</span>
+                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal Form JS-->
-    <script>
-    document.getElementById('modalContactForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const submitText = submitBtn.querySelector('.submit-text');
-      const spinner = submitBtn.querySelector('.spinner-border');
-      
-      submitText.textContent = 'Sending...';
-      spinner.classList.remove('d-none');
-      submitBtn.disabled = true;
-      
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        
-        if (response.ok) {
-          // Success message
-          form.innerHTML = `
-            <div class="text-center py-4" style="color: white;">
-              <i class="fas fa-check-circle mb-3" style="font-size: 3rem; color: var(--primary-color);"></i>
-              <h3 style="color: var(--primary-color);">Thank You!</h3>
-              <p style="color: var(--primary-color);">Your request has been sent. We will get back to you shortly.</p>
-              <button class="success-close-btn mt-3" data-bs-dismiss="modal">
-                Close
-              </button>
-            </div>
-          `;
-          
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'conversion', {'send_to': 'AW-YOUR_GOOGLE_ADS_ID'});
-          }
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (error) {
-        form.innerHTML = `
-          <div class="alert alert-danger">
-            <i class="fas fa-exclamation-triangle me-2"></i>
-            Message failed to send. Please email directly to:
-            <a href="mailto:grantgrovesvp@gmail.com">grantgrovesvp@gmail.com</a>
-          </div>
-          <button class="btn btn-secondary mt-3" onclick="location.reload()">Try Again</button>
-        `;
-      } finally {
-        submitText.textContent = 'Send Request';
-        spinner.classList.add('d-none');
-        submitBtn.disabled = false;
-      }
-    });
+  <script src="scripts/contact.js" type="module"></script>
 
-    // Reset form when modal closes
-    document.getElementById('contactModal').addEventListener('hidden.bs.modal', function() {
-      const form = document.getElementById('modalContactForm');
-      if (form) form.reset();
-    });
-  </script>
+</body>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const animateOnScroll = function() {
-          const elements = document.querySelectorAll('.scroll-animate');
-          const windowHeight = window.innerHeight;
-          
-          elements.forEach(element => {
-              const elementPosition = element.getBoundingClientRect().top;
-              
-              if (elementPosition < windowHeight * 0.85) {
-                  element.classList.add('active');
-              }
-          });
-      };
-      
-     
-      animateOnScroll();
-        window.addEventListener('scroll', animateOnScroll);
-    });
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        const headerHeight = document.querySelector('header').offsetHeight;
-        const targetPosition = targetElement.offsetTop - headerHeight - 20; 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  </script>
-  </body>
 </html>
