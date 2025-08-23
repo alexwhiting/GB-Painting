@@ -45,7 +45,8 @@ const areas = [{
     'New Minas',
     'Kentville',
     'And more!'
-  ]
+  ],
+  icon: 'apple-whole'
 }, {
   location: 'Halifax and Surrounding Areas',
   locationSpecifics: [
@@ -53,7 +54,8 @@ const areas = [{
     'Sackville',
     'Tantallon',
     'And more!'
-  ]
+  ],
+  icon: 'city'
 }, {
   location: 'Dartmouth',
   locationSpecifics: [
@@ -61,7 +63,8 @@ const areas = [{
     'Eastern Passage',
     'Portland',
     'And more!'
-  ]
+  ],
+  icon: 'tree-city'
 }];
 
 function areasOfOperationHTML() {
@@ -74,7 +77,7 @@ function areasOfOperationHTML() {
       <div class="col-md-4 mb-4 scroll-animate">
         <div class="expertise-card">
           <div class="expertise-icon">
-            <i class="fa-solid fa-apple-whole"></i>
+            <i class="fa-solid fa-${area.icon}" data-icon></i>
           </div>
           <h3 data-location>
             ${area.location}
