@@ -71,7 +71,7 @@ function areasOfOperationHTML() {
     let listItemsHTML = '';
     html +=
       `
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 scroll-animate">
         <div class="expertise-card">
           <div class="expertise-icon">
             <i class="fa-solid fa-apple-whole"></i>

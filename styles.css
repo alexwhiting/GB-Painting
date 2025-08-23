@@ -11,6 +11,7 @@ html {
   font-family: myFont;
   src: url('Rajdhani-Regular.ttf')
 }
+
 * {
   font-family: myFont;
   font-size: 1.25rem;
@@ -29,7 +30,7 @@ html {
   gap: 0.625rem;
 }
 
-.nav a{
+.nav a {
   position: relative;
   text-decoration: none;
   color: black;
@@ -47,7 +48,8 @@ html {
   cursor: pointer;
 }
 
-#button1, #button4{
+#button1,
+#button4 {
   margin-right: 2.5rem;
   padding: 1.875rem;
   border-radius: 50px;
@@ -73,7 +75,7 @@ html {
   border: 2px solid #2d5d1d;
 }
 
-.button a{
+.button a {
   text-decoration: none;
   color: white;
 }
@@ -121,7 +123,7 @@ html {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: auto;
   left: 0;
@@ -135,13 +137,19 @@ html {
   white-space: nowrap;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
-@media (max-width: 37.5rem){
+@media (max-width: 37.5rem) {
   .dropdown-content {
     right: 0;
     left: auto;
@@ -151,8 +159,8 @@ html {
 }
 
 .subheaders {
-  color: #2d5d1d; 
-} 
+  color: #2d5d1d;
+}
 
 .picture2 {
   float: right;
@@ -180,7 +188,7 @@ html {
   margin: 3.125rem 0 0 0;
 }
 
-.call-us-2 a{
+.call-us-2 a {
   text-decoration: none;
   color: #2d5d1d;
 }
@@ -190,15 +198,15 @@ html {
   height: 80vh;
   background-image: url("images/background_picture.jpg");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   margin: 0;
-  padding: 0; 
-  width: 100vw; 
-  left: 50%; 
-  right: 50%; 
-  margin-left: -50vw; 
+  padding: 0;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
   margin-right: -50vw;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -208,7 +216,8 @@ html {
 }
 
 .hero-overlay {
-  position: absolute;;
+  position: absolute;
+  ;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
@@ -218,7 +227,7 @@ html {
 
 .hero-content {
   position: relative;
-  z-index: 3; 
+  z-index: 3;
   color: white;
   text-align: center;
   padding-top: 20vh;
@@ -230,6 +239,7 @@ html {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -240,6 +250,7 @@ html {
     opacity: 0;
     transform: translateY(1.25rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -247,93 +258,131 @@ html {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
-.services{
+.services {
   text-align: center;
   margin: 9.375rem 0 3.125rem 0;
   width: 100%;
   white-space: nowrap;
   white-space: nowrap;
-  display: block; 
+  display: block;
 }
 
 .card-img-top {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
 }
 
-.card-body2{ 
+.card-body2 {
   background-color: #f5f5f5;
 }
 
 /* Animation Styles */
 .scroll-animate {
-    opacity: 0;
-    transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: stagger child elements */
+.js-areas-of-operation .scroll-animate:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.js-areas-of-operation .scroll-animate:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.js-areas-of-operation .scroll-animate:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+/* Same for testimonials if needed */
+.testimonials .scroll-animate:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.testimonials .scroll-animate:nth-child(2) {
+  transition-delay: 0.2s;
 }
 
 /* Hero Section */
 .scroll-animate.hero-section {
-    transform: translateY(1.875rem);
+  transform: translateY(1.875rem);
 }
 
 .scroll-animate.hero-section .hero-overlay {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.8s ease-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-out;
 }
 
 .scroll-animate.hero-section .hero-content h1,
 .scroll-animate.hero-section .hero-content p {
-    opacity: 0;
-    transform: translateY(1.25rem);
-    transition: all 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: all 0.6s ease-out;
 }
 
 .scroll-animate.hero-section .hero-content p {
-    transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .scroll-animate.row {
-    transform: translateY(1.875rem);
+  transform: translateY(1.875rem);
 }
 
 .scroll-animate.row .about h3,
 .scroll-animate.row .about p {
-    opacity: 0;
-    transform: translateX(-1.25rem);
-    transition: all 0.6s ease-out;
+  opacity: 0;
+  transform: translateX(-1.25rem);
+  transition: all 0.6s ease-out;
 }
 
 .scroll-animate.row .about p:nth-child(2) {
-    transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .scroll-animate.row .about p:nth-child(3) {
-    transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .scroll-animate.row .about p:nth-child(4) {
-    transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .scroll-animate.row .picture2 {
-    opacity: 0;
-    transform: scale(0.95);
-    transition: all 0.6s ease-out;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease-out;
 }
 
 .scroll-animate.active {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .scroll-animate.active .hero-overlay {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .scroll-animate.active .hero-content h1,
@@ -341,21 +390,24 @@ html {
 .scroll-animate.active .about h3,
 .scroll-animate.active .about p,
 .scroll-animate.active .picture2 {
-    opacity: 1;
-    transform: translate(0) scale(1);
+  opacity: 1;
+  transform: translate(0) scale(1);
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .scroll-animate,
-    .scroll-animate * {
-        transition: none; 
-        transform: none; 
-        opacity: 1; 
-    }
+
+  .scroll-animate,
+  .scroll-animate * {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
 }
 
 
-#footer, #footer2, #footer3 {
+#footer,
+#footer2,
+#footer3 {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -366,7 +418,7 @@ html {
 
 
 #page-container {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 #footer .row.mx-0 {
@@ -383,13 +435,15 @@ html {
   color: white;
 }
 
-.card-hover, .services-pictures{
+.card-hover,
+.services-pictures {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
-.card-hover:hover, .services-pictures:hover{
+.card-hover:hover,
+.services-pictures:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -401,7 +455,7 @@ html {
 }
 
 .card-body2 h5 {
-  color: #333; 
+  color: #333;
 }
 
 .dropdown-content {
@@ -412,13 +466,13 @@ html {
   display: block;
   visibility: hidden;
   position: relative;
-  top: -6.25rem; 
+  top: -6.25rem;
   height: 0;
 }
 
 .areas-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 1rem;
   justify-content: center;
@@ -444,7 +498,7 @@ html {
   box-shadow: 0 4px 8px rgba(45, 93, 29, 0.1);
 }
 
-.areas-grid a{
+.areas-grid a {
   text-decoration: none;
   color: black;
 }
@@ -454,7 +508,7 @@ html {
   margin-top: 3.125rem;
 }
 
-.services-header{
+.services-header {
   text-align: center;
   margin: 2.5rem 0 2.5rem 0;
   padding: 1.25rem 0 3.75rem 0;
@@ -471,7 +525,7 @@ html {
 }
 
 
-.services-sections{
+.services-sections {
   margin: 2rem auto;
 }
 
@@ -479,7 +533,7 @@ html {
 .img-fluid {
   width: 100%;
   height: auto;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
 
@@ -487,6 +541,7 @@ html {
   .container-80 {
     width: 90%;
   }
+
   .col-md-6 {
     margin-bottom: 1rem;
   }
@@ -502,7 +557,7 @@ html {
   display: block;
   width: 80%;
   height: 0.125rem;
-  background: rgba(45, 93, 29, 0.15); 
+  background: rgba(45, 93, 29, 0.15);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -510,12 +565,12 @@ html {
   margin: 0 auto;
 }
 
-.contacts-list a{
+.contacts-list a {
   text-decoration: none;
   color: black;
 }
 
-.contacts-list{
+.contacts-list {
   list-style-type: none;
 }
 
@@ -542,7 +597,7 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.contacts-list a{
+.contacts-list a {
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
@@ -560,7 +615,7 @@ html {
 }
 
 .card-img-top {
-  opacity: 0.8;  
+  opacity: 0.8;
 }
 
 .card-services:hover {
@@ -570,28 +625,28 @@ html {
 }
 
 .job1-1-before {
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('images/job1.1-before.jpg');
   background-size: cover;
 }
 
 .job1-1-after {
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('images/job1.1-after.jpg');
   background-size: cover;
 }
 
 .job1-2-before {
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('images/job1.2-before.jpg');
   background-size: cover;
 }
 
 .job1-2-after {
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('images/job1.2-after.jpg');
   background-size: cover;
@@ -599,14 +654,15 @@ html {
 
 [class*="job1-"] h2 {
   color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
-  font-weight: bold; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }
 
-.hero-content h1, .hero-content p{
+.hero-content h1,
+.hero-content p {
   color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
-  font-weight: bold; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }
 
 [class^="job1-1"] {
@@ -615,22 +671,22 @@ html {
 
 @media (min-width: 768px) {
   .custom-card-height {
-    height: 50vw;   
+    height: 50vw;
     max-height: 400px;
   }
 }
 
 @media (min-width: 992px) {
   .custom-card-height {
-    height: 40vw;     
-    max-height: 500px; 
+    height: 40vw;
+    max-height: 500px;
   }
 }
 
 .card-img-top {
-  height: 50%;      
-  width: 100%;    
-  object-fit: cover; 
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 500px) {
@@ -670,7 +726,7 @@ html {
 }
 
 [class*="job1-"] {
-  position: relative; 
+  position: relative;
 }
 
 [class*="job1-"] h2 {
@@ -701,12 +757,12 @@ html {
   padding: 2rem;
   height: 100%;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .expertise-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .expertise-icon {
