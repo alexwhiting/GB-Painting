@@ -177,8 +177,10 @@ html {
   color: #2d5d1d;
 }
 
-.picture2 {
+.about-image {
   float: right;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .areas-of-operation {
@@ -385,7 +387,7 @@ html {
   transition-delay: 0.3s;
 }
 
-.scroll-animate.row .picture2 {
+.scroll-animate.row .about-image {
   opacity: 0;
   transform: scale(0.95);
   transition: all 0.6s ease-out;
@@ -404,7 +406,7 @@ html {
 .scroll-animate.active .hero-content p,
 .scroll-animate.active .about h3,
 .scroll-animate.active .about p,
-.scroll-animate.active .picture2 {
+.scroll-animate.active .about-image {
   opacity: 1;
   transform: translate(0) scale(1);
 }

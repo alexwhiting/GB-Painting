@@ -2,7 +2,7 @@ export function generateHeader() {
   const html = `
     <div class="row hstack">
       <div class="col-12 col-md-4">
-        <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="384" height="200"></a>
+        <a href="index.html" class="header-img"><img src="images/logo.jpg" alt="logo" width="288" height="150"></a>
       </div>
       <div class="col-12 col-md-4">
         <!-- Navigation -->
