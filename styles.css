@@ -226,9 +226,16 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 1000px) {
+  .hero-section {
+    height: 70vh;
+  }
+}
+
+
 @media (max-width: 500px) {
   .hero-section {
-    height: auto;
+    height: 40vh;
   }
 }
 
