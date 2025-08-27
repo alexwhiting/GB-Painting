@@ -163,6 +163,13 @@ html {
   width: 165px;
   padding: 1.2rem;
   margin: 1.2rem auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mobile-dropdown-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 

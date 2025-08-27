@@ -40,7 +40,7 @@ export function generateMobileHeader() {
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
         <a data-bs-toggle="modal" data-bs-target="#contactModal"
-          class="button mobile-dropdown-button justify-content-center align-items-center">
+          class="mobile-dropdown-button justify-content-center align-items-center">
           <span>Free Estimate!</span>
         </a>
       </ul>
