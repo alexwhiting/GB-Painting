@@ -27,8 +27,8 @@ html {
 }
 
 .nav {
-  float: right;
-  gap: 0.625rem;
+  justify-content: center;
+  gap: 0.7rem;
 }
 
 .nav a {
