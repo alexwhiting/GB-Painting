@@ -68,3 +68,38 @@ export function toggleMobileMenu() {
     }
   });
 }
+
+export function generateFooter() {
+  const html = `
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-start">
+          <a href="index.html"><img src="images/logo.jpg" alt="logo" width="192" height="100"></a>
+        </div>
+        <div class="col-md-4 text-center call-us-2">
+          CALL US TODAY: <a href="tel:902-999-5418">902-999-5418</a>
+        </div>
+        <div class="col-md-4 text-end">
+          <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button2">
+            <span>Free Estimate!</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.querySelector('#footer')
+    .innerHTML = html;
+}
+
+export function generateMobileFooter() {
+  const html = `
+    <a href="index.html"><img src="images/logo.jpg" alt="logo" class="sm-footer-logo" width="192" height="100"></a>
+    <a data-bs-toggle="modal" data-bs-target="#contactModal" class="button" id="button4">
+      <span>Free Estimate!</span>
+    </a>
+  `;
+
+  document.querySelector('#footer3')
+    .innerHTML = html;
+}
