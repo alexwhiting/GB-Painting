@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>GB Painting</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Animate on scroll library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+  <meta name="description" content="We offer interior and exterior painting services in the Annapolis Valley, Halifax, and surrounding areas.">
+</head>
+<body>
+
+  <div id="pageContainer" class="container mx-auto px-2 max-w-7xl">
+
+    <header class="top-0 sticky bg-white z-50">
+      <div class="flex justify-between items-center">
+
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="logo" class="w-[196px] h-[104px]">
+        </a>
+        
+        <nav class="max-md:hidden">
+          <ul class="flex gap-2">
+            <li>
+              <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+                document.getElementById('heroSection').scrollIntoView({behavior: 'smooth'})">
+              Home</a>
+            </li>
+            <li>
+              <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+                document.getElementById('aboutUs').scrollIntoView({behavior: 'smooth'})">
+              About</a>
+            </li>
+            <li> 
+              <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+                document.getElementById('servicesSection').scrollIntoView({behavior: 'smooth'})">
+              Services</a>
+            </li>
+            <li>
+              <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+                document.getElementById('serviceAreasSection').scrollIntoView({behavior: 'smooth'})">
+              Areas</a>
+            </li>
+            <li>
+              <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+                document.getElementById('testimonialsSection').scrollIntoView({behavior: 'smooth'})">
+              Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav id="mobileNav" class="md-hidden absolute top-[100px] right-0 w-full bg-white shadow-lg hidden">
+          <ul class="flex flex-col space-y-4 p-6">
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('heroSection').scrollIntoView({behavior: 'smooth'})">Home</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('aboutUs').scrollIntoView({behavior: 'smooth'})">About</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('servicesSection').scrollIntoView({behavior: 'smooth'})">Services</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('serviceAreasSection').scrollIntoView({behavior: 'smooth'})">Areas</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('testimonialsSection').scrollIntoView({behavior: 'smooth'})">Testimonials</a></li>
+            <li>
+              <button class="w-full bg-[var(--primary-color)] text-white rounded-lg py-2 hover:bg-[var(--primary-color)]/90 hover:cursor-pointer js-mobile-nav-link" 
+                onclick="document.getElementById('quoteSection').scrollIntoView({behavior: 'smooth'})">
+                Get Started
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+
+        <button class="bg-[var(--primary-color)] rounded-2xl cursor-pointer p-5 text-white hover:bg-[var(--primary-color)]/90 transition max-md:hidden" onclick="
+          document.getElementById('quoteSection').scrollIntoView({behavior: 'smooth'})">
+          Get Started
+        </button>
+
+        <button id="mobileHamburger" class="md:hidden text-[var(--primary-color)] text-[30px] mr-5">
+          <i class="fa-solid fa-bars js-mobile-menu-icon"></i>
+        </button>
+
+      </div>
+
+    </header>
+    
+    <hr class="border-t border-gray-200 my-4">
+
+    <section id="heroSection" class="mb-40" data-aos="fade-down">
+      <div class="flex flex-col md:flex-row items-stretch">
+        
+        <div class="p-4 md:w-1/2 flex flex-col justify-center">
+          <h1 class="text-[60px] max-md:text-[48px] max-sm:text-[36px] font-bold mb-4">
+            Bringing Your <span class="text-[var(--primary-color)]">Vision</span> to Life
+          </h1>
+          <p class="text-[20px] text-[var(--light-font)] mb-4">
+            Trusted local painting experts delivering high-quality interior and exterior painting services across Halifax and the Annapolis Valley.
+          </p>
+          <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4">
+            <button class="bg-[var(--primary-color)] p-3 rounded-lg hover:cursor-pointer text-white hover:bg-[var(--primary-color)]/90 transition" onclick="
+              document.getElementById('quoteSection').scrollIntoView({behavior: 'smooth'})">
+              Get Free Quote
+            </button>
+            <a class="border p-3 rounded-lg text-center hover:bg-gray-50 hover:cursor-pointer transition" href="tel:+19029995418">Call Now</a>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center">
+          <img src="images/hero-image.jpg" alt="hero image" class="w-auto md:w-auto max-md:h-[400px] max-h-[600px] object-cover rounded-xl shadow-xl">
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="aboutUs" class="mb-40" data-aos="fade-down">
+
+      <div class="mb-20 text-center">
+        <h1 class="flex justify-center mb-2 text-[48px] max-sm:text-[36px] font-bold">
+          <span>About </span> 
+          <span class="text-[var(--primary-color)] ml-2">Groves & Bodnar</span> 
+        </h1>
+        <h2 class="flex justify-center text-[20px] text-[var(--light-font)]">Two hardworking university students bringing professional painting services to our Nova Scotia community.</h2>
+      </div>
+
+      <div class="grid grid-cols-2 max-md:grid-cols-1">
+        <div>
+          <h1 class="font-bold text-[24px] mb-4 mt-4">Our Story</h1>
+          <p class="text-[16px] text-[var(--light-font)] mb-2">Welcome to Groves & Bodnar Painting, your trusted local painting company run by two hardworking university students! We're passionate about delivering high quality, affordable painting services.</p>
+          <p class="text-[16px] text-[var(--light-font)] mb-2">Founded by Grant Groves and Isaac Bodnar, we started this business to bring reliable and professional painting services to our community. No matter what the job may be, we take pride in our work and commitment to customer satisfaction.</p>
+          <p class="text-[16px] text-[var(--light-font)]">As university students, we understand the importance of fair pricing, so we keep our rates reasonable without sacrificing quality.</p>
+        </div>
+
+        <div class="p-4">
+          <img src="images/about-image.jpg" alt="Image of house" class="w-full md:w-auto object-cover rounded-xl shadow-xl">
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section id="servicesSection" class="mb-40">
+      <div class="mb-20 text-center" data-aos="fade-down">
+        <h1 class="flex justify-center mb-2 text-[48px] max-sm:text-[36px] font-bold">Our<span class="text-[var(--primary-color)] ml-2">Services</span></h1>
+        <h2 class="flex justify-center text-[20px] text-[var(--light-font)]">Professional painting services designed to transform your space and exceed your expectations.</h2>
+      </div>
+
+      <div>
+
+        <div id="servicesCards" class="grid grid-cols-3 max-lg:grid-cols-1 mb-10 gap-4">
+        <!-- Generated by JS -->
+        </div>
+
+      </div>
+
+      <div class="flex justify-center">
+        <button class="bg-[var(--primary-color)] rounded-xl px-12 py-4 text-white hover:cursor-pointer" onclick="
+          document.getElementById('quoteSection').scrollIntoView({behavior: 'smooth'})">
+        Get Your Free Estimate</button>
+      </div>
+
+    </section>
+
+    <section id="serviceAreasSection" class="mb-40">
+
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="flex justify-center mb-2 text-[48px] max-sm:text-[36px] font-bold">Service        
+          <span class="text-[var(--primary-color)] ml-2">Areas</span>
+        </h1>
+
+        <h2 class="flex justify-center text-[20px] text-[var(--light-font)] mb-20">We proudly serve communities across Nova Scotia, bringing professional painting services right to your doorstep.</h2>
+      </div>
+      
+
+      <div id="serviceAreaCards" class="grid grid-cols-3 max-lg:grid-cols-1 gap-4 mb-10">
+        <!-- Generated by JS-->
+      </div>
+
+       <div class="bg-[var(--primary-color)]/20 text-center p-10">
+        <h1 class="text-[24px] font-bold mb-4">Don't See Your Area?</h1>
+        <p class="text-[var(--light-font)]">We are always open to expanding our service areas. Contact us to discuss your project.</p>
+      </div>
+
+    </section>
+
+    <section id="testimonialsSection" class="mb-40">
+
+      <div data-aos="fade-down" class="text-center">
+        <h1 class="mb-2 text-[48px] max-sm:text-[36px] font-bold">What Our<span class="text-[var(--primary-color)] ml-2">Customers Say</span></h1>
+
+        <h2 class="text-[20px] text-[var(--light-font)] mb-20">Don't just take our word for it, hear what our customers have to say!</h2>
+      </div>
+      
+
+      <div id="testimonialCards" class="grid grid-cols-3 max-lg:grid-cols-1 gap-4">
+        <!-- generated by Js-->
+      </div>
+      
+    </section>
+
+    <section id="quoteSection" class="mb-20">
+
+      <div data-aos="fade-down" class="text-center">
+        <h1 class="flex justify-center mb-2 text-[48px] max-sm:text-[36px] font-bold">Get Your<span class="text-[var(--primary-color)] ml-2">Free Quote</span></h1>
+
+        <h2 class="flex justify-center text-[20px] text-[var(--light-font)] mb-20">Contact us today for a free, no-obligation estimate.</h2>
+      </div>
+
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-8">
+
+        <!-- Modal Form -->
+        <div class="card shadow-2xl rounded-xl p-8 bg-white">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800">Send us a message</h2>
+
+          <form id="modalContactForm" action="https://formspree.io/f/xvgrnokr" method="POST" class="space-y-4">
+            <input type="hidden" name="_replyto" value="grantgrovesvp@gmail.com">
+            <input type="hidden" name="_subject" value="GB Painting Test">
+
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full rounded-lg border border-gray-300 p-3 focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)]/30 outline-none">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email" name="email" required
+                class="w-full rounded-lg border border-gray-300 p-3 focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)]/30 outline-none">
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone <span class="text-gray-400">(optional)</span></label>
+              <input type="tel" id="phone" name="phone"
+                class="w-full rounded-lg border border-gray-300 p-3 focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)]/30 outline-none">
+            </div>
+
+            <div>
+              <label for="bestTime" class="block text-sm font-medium text-gray-700 mb-1">Best Time to Reach You</label>
+              <select id="bestTime" name="bestTime"
+                class="w-full rounded-lg border border-gray-300 p-3 focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)]/30 outline-none" required>
+                <option value="">Select a time</option>
+                <option value="morning">Morning (9am–12pm)</option>
+                <option value="afternoon">Afternoon (12pm–5pm)</option>
+                <option value="evening">Evening (5pm–8pm)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Brief Description of Work</label>
+              <textarea id="description" name="description" rows="4" required
+                class="w-full rounded-lg border border-gray-300 p-3 focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)]/30 outline-none"></textarea>
+            </div>
+
+            <div>
+              <button type="submit"
+                class="w-full bg-[var(--primary-color)] text-white font-semibold py-3 rounded-lg hover:bg-[var(--primary-color)]/90 transition hover:cursor-pointer">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card shadow-2xl rounded-xl p-8 bg-white flex flex-col justify-center">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+
+          <div class="space-y-4">
+            <!-- Phone -->
+            <div class="flex items-center gap-3">
+              <div class="rounded-full bg-[var(--primary-color)]/10 p-3">
+                <i class="fa-solid fa-phone text-[var(--primary-color)]"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Phone</p>
+                <p class="font-medium text-gray-800">+1 (902)-999-5418</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+              <div class="rounded-full bg-[var(--primary-color)]/10 p-3">
+                <i class="fa-solid fa-envelope text-[var(--primary-color)]"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Email</p>
+                <p class="font-medium text-gray-800">grantgrovesvp@gmail.com</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="flex items-center gap-3">
+              <div class="rounded-full bg-[var(--primary-color)]/10 p-3">
+                <i class="fa-solid fa-location-dot text-[var(--primary-color)]"></i>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Location</p>
+                <p class="font-medium text-gray-800">Nova Scotia, Canada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="mt-8">
+            <a href="tel:+19029995418"
+              class="w-full inline-block text-center bg-[var(--primary-color)] text-white font-semibold py-3 rounded-lg hover:bg-[var(--primary-color)]/90 transition">
+              Call Us Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="bg-[var(--primary-color)] text-gray-300 mt-20">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div>
+        <h2 class="text-xl font-bold text-white mb-3">Groves & Bodnar Painting</h2>
+        <p class="text-sm">
+          Professional painting services across Nova Scotia. Quality work, fair prices, student-run business.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Interior Painting</li>
+          <li>Exterior Painting</li>
+          <li>Deck Staining</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Service Areas</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Halifax & Surrounding</li>
+          <li>Dartmouth Area</li>
+          <li>Annapolis Valley</li>
+          <li>Wolfville</li>
+          <li>Bedford</li>
+          <li>Kentville</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li><i class="fa-solid fa-phone mr-2"></i>+1 (902)-999-5418</li>
+          <li><i class="fa-solid fa-envelope mr-2"></i>grantgrovesvp@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot mr-2"></i>Serving Halifax & Annapolis Valley</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white mt-8 py-4 text-center text-sm text-white">
+      © 2025 Groves & Bodnar Painting. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="general.js"></script>
+  
+  <!-- Animate on scroll JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,   // animation duration (ms)
+      once: true,      // animate only once
+    });
+  </script>
+ 
+</body>
+</html>
