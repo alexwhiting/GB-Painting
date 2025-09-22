@@ -216,6 +216,19 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function scrollToWithOffset(id) {
+  const el = document.getElementById(id);
+  const headerOffset = 104; 
+  const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+  const offsetPosition = elementPosition - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+}
+
+
 toggleMobileNav();
 
 generateServiceAreasHTML();
