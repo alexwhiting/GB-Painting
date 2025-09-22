@@ -30,27 +30,27 @@
           <ul class="flex gap-2">
             <li>
               <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
-                document.getElementById('heroSection').scrollIntoView({behavior: 'smooth'})">
+                scrollToWithOffset('heroSection')">
               Home</a>
             </li>
             <li>
               <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
-                document.getElementById('aboutUs').scrollIntoView({behavior: 'smooth'})">
+                scrollToWithOffset('aboutUs')">
               About</a>
             </li>
             <li> 
               <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
-                document.getElementById('servicesSection').scrollIntoView({behavior: 'smooth'})">
+                scrollToWithOffset('servicesSection')">
               Services</a>
             </li>
             <li>
               <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
-                document.getElementById('serviceAreasSection').scrollIntoView({behavior: 'smooth'})">
+                scrollToWithOffset('serviceAreasSection')">
               Areas</a>
             </li>
             <li>
               <a class="hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
-                document.getElementById('testimonialsSection').scrollIntoView({behavior: 'smooth'})">
+                scrollToWithOffset('testimonialsSection')">
               Testimonials</a>
             </li>
           </ul>
@@ -58,14 +58,25 @@
 
         <nav id="mobileNav" class="md-hidden absolute top-[100px] right-0 w-full bg-white shadow-lg hidden">
           <ul class="flex flex-col space-y-4 p-6">
-            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('heroSection').scrollIntoView({behavior: 'smooth'})">Home</a></li>
-            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('aboutUs').scrollIntoView({behavior: 'smooth'})">About</a></li>
-            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('servicesSection').scrollIntoView({behavior: 'smooth'})">Services</a></li>
-            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('serviceAreasSection').scrollIntoView({behavior: 'smooth'})">Areas</a></li>
-            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="document.getElementById('testimonialsSection').scrollIntoView({behavior: 'smooth'})">Testimonials</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+              scrollToWithOffset('heroSection')">
+              Home</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+              scrollToWithOffset('aboutUs')">
+              About</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+              scrollToWithOffset('servicesSection')">
+              Services</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+              scrollToWithOffset('serviceAreasSection')">
+              Areas</a></li>
+            <li><a class="js-mobile-nav-link hover:text-[var(--primary-color)] hover:cursor-pointer" onclick="
+              scrollToWithOffset('testimonialsSection')">
+              Testimonials</a></li>
             <li>
               <button class="w-full bg-[var(--primary-color)] text-white rounded-lg py-2 hover:bg-[var(--primary-color)]/90 hover:cursor-pointer js-mobile-nav-link" 
-                onclick="document.getElementById('quoteSection').scrollIntoView({behavior: 'smooth'})">
+                onclick="
+                scrollToWithOffset('quoteSection')">
                 Get Started
               </button>
             </li>
@@ -367,8 +378,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000,   // animation duration (ms)
-      once: true,      // animate only once
+      duration: 1000,   
+      once: true,      
     });
   </script>
  
